@@ -19,10 +19,10 @@ spec:
         }
         output {
           elasticsearch {
-            hosts => [ "${ES_ES_HOSTS}" ]
-            user => "${ES_ES_USER}"
-            password => "${ES_ES_PASSWORD}"
-            ssl_certificate_authorities => "${ES_ES_SSL_CERTIFICATE_AUTHORITY}"
+            hosts => [ "$${ES_ES_HOSTS}" ]
+            user => "$${ES_ES_USER}"
+            password => "$${ES_ES_PASSWORD}"
+            ssl_certificate_authorities => "$${ES_ES_SSL_CERTIFICATE_AUTHORITY}"
           }
           stdout { codec => rubydebug }
         }

@@ -12,7 +12,7 @@ spec:
     filebeat.autodiscover:
       providers:
         - type: kubernetes
-          node: ${NODE_NAME}
+          node: $${NODE_NAME}
           hints.enabled: true
           templates:
             - config:
